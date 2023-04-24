@@ -1,0 +1,17 @@
+.completado-icon{
+      font-size: 20px;
+      margin-top: -25px;
+}
+.container-icon{
+      display: flex;
+      justify-content: right;
+}
+
+.container-card{
+      max-width: 15em;
+      z-index: 1;
+}
+
+button{
+      z-index: 0;
+}
