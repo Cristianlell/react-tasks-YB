@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export const TaskContext = createContext();
 
@@ -22,7 +23,7 @@ export const TaskContextProvider = (props) => {
         setTasks([
             ...tasks,
             {
-                id: tasks.length,
+                id: uuidv4(),
                 title: task.title,
                 description: task.description,
             },

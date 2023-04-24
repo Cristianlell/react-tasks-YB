@@ -8,6 +8,7 @@ const TaskCard = ({ task }) => {
 
      const handleDelete = (e)=> {
           deleteTask(task.id)
+          setClick(false)
      }
      const handleClick = ()=>{
           setClick(!click)
